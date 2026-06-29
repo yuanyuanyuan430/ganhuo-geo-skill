@@ -1,0 +1,18 @@
+{
+  "skill_name": "ganhuo-seo-geo-engineer",
+  "required_outputs": [
+    "rewritten_content",
+    "geo_scorecard",
+    "change_notes",
+    "supplement_backlog",
+    "risk_notes"
+  ],
+  "quality_checks": [
+    "preserves_original_meaning",
+    "does_not_invent_statistics",
+    "marks_missing_proof_as_backlog",
+    "includes_answer_first_structure",
+    "flags_ranking_guarantee_requests"
+  ]
+}
+

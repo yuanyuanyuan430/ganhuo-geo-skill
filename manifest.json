@@ -1,0 +1,56 @@
+{
+  "repo_name": "ganhuo-seo-geo-skill",
+  "version": "0.1.0",
+  "description": "Original Ganhuo SEO/GEO Skill for rebuilding existing content into AI-search-friendly assets.",
+  "license": "MIT",
+  "primary_skill": "ganhuo-seo-geo-engineer",
+  "skills": [
+    {
+      "name": "ganhuo-seo-geo-engineer",
+      "path": "skills/ganhuo-seo-geo-engineer/SKILL.md",
+      "description": "Diagnose and rebuild existing articles, product pages, tutorials, and knowledge materials into GEO and AI-search-friendly content assets.",
+      "status": "active",
+      "maturity": "production-draft",
+      "primary_outputs": [
+        "rewritten_content",
+        "geo_scorecard",
+        "change_notes",
+        "supplement_backlog",
+        "risk_notes"
+      ]
+    }
+  ],
+  "references": [
+    "skills/ganhuo-seo-geo-engineer/references/geo-material-notes.md",
+    "skills/ganhuo-seo-geo-engineer/references/geo-playbook.md",
+    "skills/ganhuo-seo-geo-engineer/references/geo-output-standard.md",
+    "skills/ganhuo-seo-geo-engineer/references/geo-anti-patterns.md"
+  ],
+  "validation": {
+    "script": "scripts/validate_skill.py",
+    "checks": [
+      "manifest_json",
+      "skill_frontmatter",
+      "ganhuo_seo_prefix",
+      "required_files",
+      "relative_links",
+      "non_empty_examples",
+      "no_outputs_directory",
+      "no_placeholder_text"
+    ]
+  },
+  "examples": [
+    "examples/01-real-brief.md",
+    "examples/02-ideal-output.md",
+    "examples/03-failure-cases.md"
+  ],
+  "keywords": [
+    "ganhuo-seo",
+    "geo",
+    "seo",
+    "ai-search",
+    "content-engineering",
+    "skill"
+  ]
+}
+

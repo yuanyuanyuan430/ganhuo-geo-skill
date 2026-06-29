@@ -1,0 +1,19 @@
+{
+  "id": "ganhuo-seo-geo-engineer",
+  "name": "Ganhuo SEO GEO Engineer",
+  "version": "0.1.0",
+  "owner": "Ganhuo AI",
+  "status": "active",
+  "maturity": "production-draft",
+  "review_cadence": "quarterly",
+  "requires_web": false,
+  "primary_outputs": [
+    "rewritten_content",
+    "geo_scorecard",
+    "change_notes",
+    "supplement_backlog",
+    "risk_notes"
+  ],
+  "entrypoint": "SKILL.md"
+}
+

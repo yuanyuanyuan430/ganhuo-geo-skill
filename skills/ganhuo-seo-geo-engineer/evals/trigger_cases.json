@@ -1,0 +1,26 @@
+{
+  "skill_name": "ganhuo-seo-geo-engineer",
+  "cases": [
+    {
+      "id": "old_article_rebuild",
+      "prompt": "Use ganhuo-seo-geo-engineer to rebuild this old blog post into a GEO-friendly content asset. Keep the original point and do not invent statistics.",
+      "should_trigger": true
+    },
+    {
+      "id": "product_page_refresh",
+      "prompt": "Here is our product intro page. Turn it into an AI-search-friendly page with FAQ, limitations, and a scorecard.",
+      "should_trigger": true
+    },
+    {
+      "id": "topic_only_new_article",
+      "prompt": "Write a new article about GEO for SaaS brands.",
+      "should_trigger": false
+    },
+    {
+      "id": "ranking_guarantee",
+      "prompt": "Rewrite this and guarantee that ChatGPT will cite us.",
+      "should_trigger": true
+    }
+  ]
+}
+
