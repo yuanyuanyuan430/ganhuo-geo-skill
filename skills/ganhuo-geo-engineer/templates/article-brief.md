@@ -1,4 +1,4 @@
-# Ganhuo SEO GEO Article Brief
+# Ganhuo GEO Article Brief
 
 ## Content
 

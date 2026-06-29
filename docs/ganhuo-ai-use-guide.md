@@ -1,34 +1,54 @@
-# Using ganhuo-seo-geo-engineer in Ganhuo AI
+# 干活 AI 使用指南
 
-Use this Skill when you have an existing article, product page, tutorial, or knowledge note and want to rebuild it into a GEO and AI-search-friendly asset.
+这个文档给中国内容团队看：如何在干活 AI 里用 `ganhuo-geo-engineer` 改造旧文。
 
-## Quick Prompt
+## 一句话
 
-```text
-Use ganhuo-seo-geo-engineer to rebuild this old content into a GEO-friendly asset.
-Preserve the original meaning, do not invent data, and return:
-1. rewritten content
-2. GEO scorecard
-3. change notes
-4. supplement backlog
-5. risk notes
-```
+把旧文章丢进干活 AI，调用 `ganhuo-geo-engineer`，让它输出可发布正文、GEO 评分卡、改造说明、待补清单和风险提示。
 
-## Good Inputs
-
-- old blog post
-- product introduction page
-- tutorial article
-- service page
-- FAQ draft
-- founder note
-- knowledge-base article
-
-## Best Practice
-
-Start with diagnosis only when the content set is large:
+## 复制这段就能用
 
 ```text
-First diagnose this article. Do not rewrite yet. Tell me what is worth keeping, what is missing, and which rebuild actions should be P0/P1/P2.
+使用 ganhuo-geo-engineer 改造下面这篇旧文。
+
+目标：
+把它改成 GEO / AI 搜索友好的内容资产。
+
+要求：
+1. 保留原文核心观点。
+2. 不编造数据、客户、案例、排名或效果。
+3. 缺什么就写进待补清单。
+4. 重构成核心答案、步骤、FAQ、边界。
+5. 输出改造后正文、GEO 评分卡、改造说明、待补清单、风险提示。
 ```
 
+## 先诊断再改写
+
+旧文很多时，先不要批量爆改。先跑诊断：
+
+```text
+先不要改写。
+请用 ganhuo-geo-engineer 诊断这篇旧文：
+1. 还有哪些内容资产价值；
+2. 最大 GEO 缺口是什么；
+3. 哪些动作排 P0、P1、P2；
+4. 是否值得深度改造。
+```
+
+## 适合输入
+
+- 公众号旧文
+- 官网文章
+- 产品说明页
+- 教程文
+- FAQ 草稿
+- 人物资料
+- 客服知识库
+
+## 不适合输入
+
+- 只有一个标题或选题
+- 纯情绪短文
+- 已经过时且无法补材料的旧文
+- 要求保证排名或 AI 引用的需求
+- 要求编造数据的需求

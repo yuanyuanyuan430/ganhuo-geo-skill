@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the ganhuo-seo-geo-skill repository."""
+"""Validate the ganhuo-geo-skill repository."""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
-PRIMARY_SKILL = "ganhuo-seo-geo-engineer"
+PRIMARY_SKILL = "ganhuo-geo-engineer"
 SKILL_ROOT = ROOT / "skills" / PRIMARY_SKILL
 
 REQUIRED_FILES = [
@@ -77,8 +77,8 @@ def validate_required_files() -> None:
 
 def validate_manifest() -> None:
     manifest = load_json(ROOT / "manifest.json")
-    if manifest.get("repo_name") != "ganhuo-seo-geo-skill":
-        fail("manifest.repo_name must be ganhuo-seo-geo-skill")
+    if manifest.get("repo_name") != "ganhuo-geo-skill":
+        fail("manifest.repo_name must be ganhuo-geo-skill")
     if manifest.get("primary_skill") != PRIMARY_SKILL:
         fail(f"manifest.primary_skill must be {PRIMARY_SKILL}")
 
@@ -89,8 +89,8 @@ def validate_manifest() -> None:
     skill = skills[0]
     if skill.get("name") != PRIMARY_SKILL:
         fail(f"manifest skill name must be {PRIMARY_SKILL}")
-    if not skill["name"].startswith("ganhuo-seo-"):
-        fail("skill name must start with ganhuo-seo-")
+    if not skill["name"].startswith("ganhuo-geo-"):
+        fail("skill name must start with ganhuo-geo-")
     if skill.get("path") != f"skills/{PRIMARY_SKILL}/SKILL.md":
         fail("manifest skill path is incorrect")
 
@@ -186,7 +186,7 @@ def main() -> None:
     validate_non_empty_examples()
     validate_no_outputs_or_placeholders()
     validate_readme_alignment()
-    print("ganhuo-seo-geo-skill validation passed.")
+    print("ganhuo-geo-skill validation passed.")
 
 
 if __name__ == "__main__":

@@ -1,14 +1,14 @@
 {
-  "repo_name": "ganhuo-seo-geo-skill",
+  "repo_name": "ganhuo-geo-skill",
   "version": "0.1.0",
-  "description": "Original Ganhuo SEO/GEO Skill for rebuilding existing content into AI-search-friendly assets.",
+  "description": "面向中国内容团队的干活 GEO Skill，用于把旧文章、产品页、教程和知识库内容改造成 AI 搜索友好的内容资产。",
   "license": "MIT",
-  "primary_skill": "ganhuo-seo-geo-engineer",
+  "primary_skill": "ganhuo-geo-engineer",
   "skills": [
     {
-      "name": "ganhuo-seo-geo-engineer",
-      "path": "skills/ganhuo-seo-geo-engineer/SKILL.md",
-      "description": "Diagnose and rebuild existing articles, product pages, tutorials, and knowledge materials into GEO and AI-search-friendly content assets.",
+      "name": "ganhuo-geo-engineer",
+      "path": "skills/ganhuo-geo-engineer/SKILL.md",
+      "description": "诊断并重构旧文章、产品页、教程和知识库内容，输出 GEO 友好正文、评分卡、改造说明、待补清单和风险提示。",
       "status": "active",
       "maturity": "production-draft",
       "primary_outputs": [
@@ -21,17 +21,17 @@
     }
   ],
   "references": [
-    "skills/ganhuo-seo-geo-engineer/references/geo-material-notes.md",
-    "skills/ganhuo-seo-geo-engineer/references/geo-playbook.md",
-    "skills/ganhuo-seo-geo-engineer/references/geo-output-standard.md",
-    "skills/ganhuo-seo-geo-engineer/references/geo-anti-patterns.md"
+    "skills/ganhuo-geo-engineer/references/geo-material-notes.md",
+    "skills/ganhuo-geo-engineer/references/geo-playbook.md",
+    "skills/ganhuo-geo-engineer/references/geo-output-standard.md",
+    "skills/ganhuo-geo-engineer/references/geo-anti-patterns.md"
   ],
   "validation": {
     "script": "scripts/validate_skill.py",
     "checks": [
       "manifest_json",
       "skill_frontmatter",
-      "ganhuo_seo_prefix",
+      "ganhuo_geo_prefix",
       "required_files",
       "relative_links",
       "non_empty_examples",
@@ -45,12 +45,10 @@
     "examples/03-failure-cases.md"
   ],
   "keywords": [
-    "ganhuo-seo",
+    "ganhuo-geo",
     "geo",
-    "seo",
     "ai-search",
     "content-engineering",
     "skill"
   ]
 }
-

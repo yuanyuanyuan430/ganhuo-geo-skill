@@ -1,90 +1,99 @@
-# ganhuo-seo-geo-skill
+# ganhuo-geo-skill
 
-`ganhuo-seo-geo-skill` is a compact, original Skill repository for turning existing articles, product pages, tutorials, and knowledge materials into GEO and AI-search-friendly content assets.
+面向中国内容团队的 GEO 旧文改造 Skill。
 
-The first Skill is `ganhuo-seo-geo-engineer`: a practical old-content rebuild workflow for Ganhuo AI and compatible agent runtimes. It focuses on content truth, structure, evidence gaps, reusable outputs, and reviewable delivery.
+这个仓库目前只做一件事：用 `ganhuo-geo-engineer` 把已经写过的文章、产品页、教程、FAQ、人物资料，改造成更适合 AI 搜索理解、摘取和复用的内容资产。
 
-## What This Repo Is
+仓库不做玄学承诺，不保证排名，不编造数据。它解决的是一个更实际的问题：旧内容里明明有价值，但结构散、证据弱、FAQ 缺、边界不清，AI 看完不知道该怎么引用。
 
-This is a single-Skill repo, not a large framework collection.
+## 它适合谁
 
-It helps an agent:
+- 有一堆旧公众号、官网文章、产品说明页的人。
+- 做 GEO、AI 搜索、内容增长的团队。
+- 想把旧内容整理成飞书教程、官网知识库、销售 FAQ 的运营同学。
+- 想在干活 AI 里固定一套旧文改造 SOP 的团队。
 
-- preserve the original article's meaning before rewriting;
-- diagnose evidence, structure, entity, question, and readability gaps;
-- rebuild the content into an AI-answer-friendly asset;
-- mark unsupported improvements as action items instead of inventing data;
-- return a reusable delivery package with score, change notes, backlog, and risk notes.
+## 主 Skill
 
-## What It Is Not
+`ganhuo-geo-engineer`
 
-- It does not guarantee rankings, traffic, citations, or model recommendations.
-- It does not fabricate statistics, quotes, cases, customers, or research.
-- It is not a GEOFlow operations wrapper.
-- It is not a generic copywriting assistant.
-- It is not a black-hat keyword-stuffing tool.
+作用：
 
-## Install / Use
+- 先诊断旧文有没有改造价值；
+- 找出结构、证据、FAQ、实体、边界上的缺口；
+- 输出改造后正文、GEO 评分卡、改造说明、待补清单、风险提示；
+- 把“优化一下”变成可执行的 P0/P1/P2 任务。
 
-Copy the Skill folder into your local agent Skill directory:
+## 不做什么
+
+- 不保证 AI 一定引用。
+- 不保证搜索排名。
+- 不虚构统计数据、客户案例、专家原话。
+- 不做关键词堆砌。
+- 不把一个选题当成旧文改造。
+
+## 安装
+
+把 Skill 目录复制到本地 Skill 目录：
 
 ```bash
-cp -R skills/ganhuo-seo-geo-engineer ~/.codex/skills/
+cp -R skills/ganhuo-geo-engineer ~/.codex/skills/
 ```
 
-Then ask your agent to use `ganhuo-seo-geo-engineer` for an existing article rewrite, for example:
+## 干活 AI 调用示例
 
 ```text
-Use ganhuo-seo-geo-engineer to rebuild this old article into a GEO-friendly content asset.
-Keep the original claims, do not invent data, and return the rewritten article, scorecard, change notes, backlog, and risk notes.
+使用 ganhuo-geo-engineer 改造下面这篇旧文。
+
+目标：
+把它改成 GEO / AI 搜索友好的内容资产。
+
+要求：
+1. 保留原文核心观点，不改变意思。
+2. 不编造数据、案例、客户、排名或效果。
+3. 把缺数据、缺案例、缺原话的位置写进待补清单。
+4. 重构成更容易被 AI 摘取的结构：核心答案、步骤、FAQ、边界。
+5. 输出改造后正文、GEO 评分卡、改造说明、待补清单、风险提示。
 ```
 
-## Repo Layout
+## 仓库结构
 
 ```text
-ganhuo-seo-geo-skill/
+ganhuo-geo-skill/
 ├── README.md
 ├── LICENSE
 ├── manifest.json
-├── scripts/
-│   └── validate_skill.py
+├── docs/
+│   └── ganhuo-ai-use-guide.md
 ├── examples/
 │   ├── 01-real-brief.md
 │   ├── 02-ideal-output.md
 │   └── 03-failure-cases.md
+├── scripts/
+│   └── validate_skill.py
 └── skills/
-    └── ganhuo-seo-geo-engineer/
+    └── ganhuo-geo-engineer/
         ├── SKILL.md
         ├── manifest.json
-        ├── templates/
-        │   └── article-brief.md
+        ├── templates/article-brief.md
         ├── evals/
-        │   ├── trigger_cases.json
-        │   └── expected_artifacts.json
         └── references/
-            ├── geo-material-notes.md
-            ├── geo-playbook.md
-            ├── geo-output-standard.md
-            └── geo-anti-patterns.md
 ```
 
-## Validation
+## 验证
 
-Run the repository validator before publishing changes:
+发布前跑：
 
 ```bash
 python3 scripts/validate_skill.py
 ```
 
-The validator checks the manifest, Skill frontmatter, required examples, eval files, relative links, naming rules, and common half-finished placeholders.
+通过后会看到：
 
-## Examples
+```text
+ganhuo-geo-skill validation passed.
+```
 
-- `examples/01-real-brief.md`: realistic Ganhuo AI request.
-- `examples/02-ideal-output.md`: compact target output shape.
-- `examples/03-failure-cases.md`: common ways this Skill should refuse or redirect.
-
-## License
+## 许可证
 
 MIT
-

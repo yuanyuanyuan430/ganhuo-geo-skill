@@ -1,6 +1,6 @@
 # Example Brief
 
-Use `ganhuo-seo-geo-engineer` to rebuild this old article into a GEO-friendly content asset.
+Use `ganhuo-geo-engineer` to rebuild this old article into a GEO-friendly content asset.
 
 ## Article
 

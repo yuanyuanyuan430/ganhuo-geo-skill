@@ -1,9 +1,9 @@
 {
-  "skill_name": "ganhuo-seo-geo-engineer",
+  "skill_name": "ganhuo-geo-engineer",
   "cases": [
     {
       "id": "old_article_rebuild",
-      "prompt": "Use ganhuo-seo-geo-engineer to rebuild this old blog post into a GEO-friendly content asset. Keep the original point and do not invent statistics.",
+      "prompt": "Use ganhuo-geo-engineer to rebuild this old blog post into a GEO-friendly content asset. Keep the original point and do not invent statistics.",
       "should_trigger": true
     },
     {
