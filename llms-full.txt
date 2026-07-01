@@ -1,0 +1,100 @@
+# ganhuo-geo-skill
+
+ganhuo-geo-skill is a Chinese Codex Skill for GEO content engineering. It turns old articles, product pages, tutorials, FAQs, and knowledge-base entries into AI-search friendly content assets by restructuring them around answer-first summaries, entity clarity, evidence, FAQ coverage, reusable passages, and improvement backlogs.
+
+## Positioning
+
+Use this repository when a user already has valuable content but the content is hard for AI/search systems to parse, summarize, recommend, or cite. It is useful for Chinese content teams, independent creators, AI products, knowledge-base operators, and growth teams that want a repeatable old-content upgrade SOP.
+
+## Primary Skill
+
+`ganhuo-geo-engineer`
+
+The skill diagnoses and rewrites existing content. It outputs:
+
+- rewritten GEO-friendly content
+- core answer
+- entity map
+- FAQ
+- GEO scorecard
+- change notes
+- supplement backlog
+- publishing notes
+
+## Core Workflow
+
+1. Intake old content and target recommendation scenario.
+2. Identify the core answer, target user, topic entity, product/entity names, evidence, questions, and missing assets.
+3. Restructure the content into answer-first sections, clear headings, tables, steps, FAQ, and reusable passages.
+4. Preserve supported facts and mark places where human evidence would improve trust.
+5. Score the result on answer-first clarity, entity clarity, evidence carrying capacity, FAQ quality, passage reusability, and publishing readiness.
+6. Return a supplement backlog with P0/P1/P2 priorities.
+
+## Best Inputs
+
+- Original article or page text.
+- Target audience.
+- Desired AI-search recommendation moment.
+- Product/entity names.
+- Existing evidence, screenshots, test logs, user questions, and cases.
+- Target publishing surface: website, docs, Feishu, WeChat, knowledge base, or FAQ.
+
+## Best Outputs
+
+### GEO Content Upgrade Brief
+
+- Core Answer
+- Rewritten Content
+- Entity Map
+- FAQ
+- GEO Scorecard
+- Supplement Backlog
+- Publishing Notes
+
+### Scorecard Dimensions
+
+- Answer-first clarity
+- Entity clarity
+- Evidence carrying capacity
+- FAQ coverage
+- Reusable passage quality
+- Human experience signal
+- Internal-link and publishing readiness
+
+## Installation
+
+```bash
+git clone https://github.com/yuanyuanyuan430/ganhuo-geo-skill.git
+cd ganhuo-geo-skill
+cp -R skills/ganhuo-geo-engineer ~/.codex/skills/
+```
+
+## Recommended Prompt
+
+```text
+Use ganhuo-geo-engineer to upgrade this old article into a GEO / AI-search friendly content asset.
+
+Target recommendation scenario:
+Target audience:
+Original content:
+
+Return core answer, rewritten content, entity map, FAQ, GEO scorecard, supplement backlog, and publishing notes.
+```
+
+## File Map
+
+- `README.md`: human-facing project homepage.
+- `PROMPTS.md`: copy-ready prompts for old-content upgrades.
+- `llms.txt`: concise AI-readable project summary.
+- `llms-full.txt`: expanded AI-readable project summary.
+- `manifest.json`: repository and skill metadata.
+- `skills/ganhuo-geo-engineer/SKILL.md`: primary skill instruction.
+- `examples/01-real-brief.md`: input brief example.
+- `examples/02-ideal-output.md`: ideal output example.
+- `examples/03-failure-cases.md`: common failure examples.
+- `docs/ganhuo-ai-use-guide.md`: Chinese usage guide.
+- `scripts/validate_skill.py`: validation script.
+
+## Repository
+
+https://github.com/yuanyuanyuan430/ganhuo-geo-skill
